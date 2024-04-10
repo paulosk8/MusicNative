@@ -1,20 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Reproductor from './src/components/Reproductor';
 
 export default function App() {
+  const titleSong = '01 Metro Boomin – Am';
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+     <Reproductor titleSong={titleSong}></Reproductor>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    margin: 10,
+    marginTop: 100,
+    backgroundColor: '#6424CC',
+    borderRadius: 5,
+  }
 });
